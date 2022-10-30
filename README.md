@@ -1,6 +1,6 @@
 # Vocinski Med static webpage
 
-Build on [nextjs](https://nextjs.org/
+Build on [nextjs](https://nextjs.org/)
 
 ## Getting Started
 
