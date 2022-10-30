@@ -1,0 +1,53 @@
+.wrapper {
+  display: grid;
+  grid-template:
+    'a'
+    'b' 100px
+    'c' 100px
+    'd' 100px;
+  gap: 16px;
+
+  @media (min-width: 768px) {
+    grid-template:
+      'a a a a a a a a'
+      'b b b b b c c c' 70px
+      'b b b b b c c c' 70px
+      'b b b b b d d d' 70px
+      'b b b b b d d d' 70px;
+    gap: 32px;
+  }
+}
+
+.hero {
+  grid-area: a;
+  width: 100%;
+  max-height: 650px;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cvjetni {
+  grid-area: b;
+}
+
+.bagremov {
+  grid-area: c;
+}
+
+.kestenov {
+  grid-area: d;
+}
